@@ -1,7 +1,7 @@
 ---
 title: "Open Source Hardware Programming"
 collection: teaching
-type: "Workshop"
+type: "Freshman Course"
 permalink: /teaching/Open-Source-Hardware-Programming
 venue: "School Design and Innovation, Tongji University"
 date: Sept. 2018 -- Jan. 2019

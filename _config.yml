@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Zonglin Di"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Zonglin Di"
 description              : &description "personal description"
 url                      : https://elegantlin.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -93,7 +93,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "https://github.com/ElegantLin"
   google_plus      :
   keybase          :
   instagram        :

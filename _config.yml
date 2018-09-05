@@ -81,10 +81,10 @@ analytics:
 author:
   name             : "Zonglin Di"
   avatar           : "Zonglin Di.jpg"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "EECS undergraduate @Tongji University && Full-stack Software Engineer @National Instruments, Shanghai, CN"
   location         : "Shanghai, China"
   employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?user=5lFDxsMAAAAJ&hl=en"
   email            :
   uri              :
   bitbucket        :
@@ -105,7 +105,8 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : #"replacethistwitterhandle"
+  researchgate     : "https://www.researchgate.net/profile/Zonglin_Di"
   vine             :
   weibo            :
   xing             :

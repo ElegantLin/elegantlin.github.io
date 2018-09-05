@@ -39,7 +39,7 @@ staticman:
   path                   : "_data/comments/{options.slug}"
   requiredFields         : ['name', 'email', 'message']
   transforms:
-    email                : "md5"
+    email                : "1452640@tongji.edu.cn"
   generatedFields:
     date:
       type               : "date"
@@ -85,7 +85,7 @@ author:
   location         : "Shanghai, China"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?user=5lFDxsMAAAAJ&hl=en"
-  email            :
+  email            : "1452640@tongji.edu.cn"
   uri              :
   bitbucket        :
   codepen          :

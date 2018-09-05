@@ -2,7 +2,7 @@
 title: "Open Source Hardware Programming"
 collection: teaching
 type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
+permalink: /teaching/Open-Source-Hardware-Programming
 venue: "School Design and Innovation, Tongji University"
 date: Sept. 2018 -- Jan. 2019
 location: "Shanghai, China"

@@ -55,9 +55,9 @@
     {% if post.citation and post.paperurl %}
       <p><a href="{{ post.bibtex }}"><u>[bibtex]</u></a><a href="{{ post.paperurl }}"><u>[PDF]</u></a></p>
     {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }} </p>
+      <p><a href="{{ post.bibtex }}"><u>[bibtex]</u></a></p>
     {% elsif post.paperurl %}
-      <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
+      <p><a href="{{ post.paperurl }}"><u>[PDF]</u></a></p>
     {% endif %}
 
   </article>

@@ -3,7 +3,7 @@ title: "Open Source Hardware and Programming"
 collection: teaching
 type: "Freshman Course"
 permalink: /teaching/Open-Source-Hardware-and-Programming
-venue: "School of Design and Innovation, Tongji University"
+venue: ["School of Design and Innovation, Tongji University"]()
 date: Sept. 2018 -- Jan. 2019
 location: "Shanghai, China"
 ---

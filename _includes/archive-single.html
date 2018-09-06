@@ -34,10 +34,12 @@
     <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
+
     {% if post.collection == 'teaching' %}
     <p> {{ post.type }}, <a href="#">{{ post.venue }}</a>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.collection == 'publications' && post.publised == False %}
-    <p>Published in <i><a href="{{ post.url }}">{{ post.venue }}</a></i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    <p>Published in <i><a href="{{ post.url }}">{{ post.venue }}</a></i>, {{ post.date | default: "1900-01-01" | date:
+      "%Y" }} </p>
     {% elsif post.collection == 'publications' && post.published == True %}
     <p>Submitted in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.date %}

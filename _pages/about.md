@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Homepage of Zonglin Di"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -12,6 +12,9 @@ This is the front page of a website that is powered by the [academicpages templa
 
 Recent News
 ======
+* I will start my Ph.D. Application in the United States this autumn. If you are interested in me, please do not hesinate and contact me.
+* A research page has been submitted to *[GeoAI 2018](https://udi.ornl.gov/geoai)*
+* I will be a Teaching Assistant of *[Open Source Hardware and Programming]()* of [School of Design and Innovation, Tongji University](http://tjdi.tongji.edu.cn/?lang=en), supervised by [Prof. Xiaohua Sun](http://tjdi.tongji.edu.cn/TeacherDetail.do?id=3865&lang=_en).
 Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
 A data-driven personal website

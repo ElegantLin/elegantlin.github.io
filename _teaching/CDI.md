@@ -1,9 +1,9 @@
 ---
-title: "Open Source Hardware Programming"
+title: "Open Source Hardware and Programming"
 collection: teaching
 type: "Freshman Course"
-permalink: /teaching/Open-Source-Hardware-Programming
-venue: "School Design and Innovation, Tongji University"
+permalink: /teaching/Open-Source-Hardware-and-Programming
+venue: "School of Design and Innovation, Tongji University"
 date: Sept. 2018 -- Jan. 2019
 location: "Shanghai, China"
 ---
@@ -12,6 +12,7 @@ This is a description of a teaching experience. You can use markdown like any ot
 
 Processor
 ======
+
 [Arduino](https://www.arduino.cc/)
 ------
 

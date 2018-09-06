@@ -12,7 +12,7 @@ This is the front page of a website that is powered by the [academicpages templa
 
 Recent News
 -----
-* **[Sept. 2018]** I will start my Ph.D. application in the United States this autumn. If you are interested in me, please do not hesitate and contact me.
+* **[Sept. 2018]** I will start my Ph.D. application in the United States this autumn. If you are interested in me, please do not hesitate and [contact me](mailto:1452640@tongji.edu.cn).
 * **[Sept. 2018]** A research page has been submitted to *[GeoAI 2018](https://udi.ornl.gov/geoai)*
 * **[Sept. 2018]** I will be a Teaching Assistant of *[Open Source Hardware and Programming]()* of [School of Design and Innovation, Tongji University](http://tjdi.tongji.edu.cn/?lang=en) for the freshmen in autumn semester in academic year of 2018-2019, supervised by [Prof. Xiaohua Sun](http://tjdi.tongji.edu.cn/TeacherDetail.do?id=3865&lang=_en).
 * **[Sept. 2018]** A full-length paper has been submitted to *[Addictive Behaviors](https://www.journals.elsevier.com/addictive-behaviors)* (Impact Factor in 2017 is 2.686).

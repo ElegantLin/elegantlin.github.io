@@ -8,27 +8,21 @@ date: Sept. 2018 -- Jan. 2019
 location: "Shanghai, China"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Hi, visitors. This page is for your reference in Open Source Hardware and Programming course. You can find the materials in the following links. If you have any questions about this course and the technology you want to know in this course, please be free to contact me. I will be in office of D&I every Monday afternoon. 
 
-Processor
-======
-
-[Arduino](https://www.arduino.cc/)
-------
-
-[Raspberry Pi](https://www.raspberrypi.org/)
-------
-
-Sensor
-======
-[Real Sense](https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html)
-------
-
-[Kinect](https://en.wikipedia.org/wiki/Kinect)
-------
+# Processor
+## [Arduino](https://www.arduino.cc/)
 
 
-Data Visualization
-======
-[Processing](https://processing.org/)
-------
+## [Raspberry Pi](https://www.raspberrypi.org/)
+
+
+# Sensor
+## [Real Sense](https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html)
+
+
+## [Kinect](https://en.wikipedia.org/wiki/Kinect)
+
+
+# Data Visualization
+## [Processing](https://processing.org/)

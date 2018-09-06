@@ -52,7 +52,7 @@
     <p><i><strong>Description:</strong></i>{{ post.abstract }}</p>
     {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
+    <!-- {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">
@@ -60,7 +60,7 @@
             rel="permalink"> Read more</a></strong>
       </p>
     </p>
-    {% endif %}
+    {% endif %} -->
 
     {% if post.citation and post.paperurl %}
     <p>[<a href="{{ post.bibtex }}"><u>bibtex</u></a>] [<a href="{{ post.paperurl }}"><u>PDF</u></a>]</p>

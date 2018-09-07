@@ -25,7 +25,7 @@ Motto
 I like three sentenses from Albert Eninstein, Steve Jobs and Robert Team of Harbin Institue of Technology (HIT). These three sentenses have inspired me for a long time and helped me overcome difficulties both in Research and Engineering one after another, which are:
 * If we knew what it was we were doing, it would not be called research, would it?
 * Stay hungery. Stay foolish.
-* 极限尚可突破，至臻亦不可止。
+* 极限尤可突破，至臻亦不可止。
 
 
 Reference

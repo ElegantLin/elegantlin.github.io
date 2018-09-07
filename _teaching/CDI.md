@@ -1,5 +1,5 @@
 ---
-title: "Open Source Hardware and Programming"
+title: "Open Source Hardware and Programming (55010501)"
 collection: teaching
 type: "Freshman Course"
 permalink: /teaching/Open-Source-Hardware-and-Programming

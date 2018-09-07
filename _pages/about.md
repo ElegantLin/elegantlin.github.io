@@ -31,7 +31,7 @@ I like three sentenses from Albert Eninstein, Steve Jobs and Robert Team of Harb
 Reference
 ------
 If you want the references to know more about me, you can contact these people:
-* [Prof. Asoke Nandi](mailto:asoke.nandi@brunel.ac.uk), Professor in Brunel University, London, FREng FIEEE
+* [Prof. Asoke Nandi](mailto:asoke.nandi@brunel.ac.uk), Professor in Brunel University, London, FREng, FIEEE
 * [Prof. Yin Wang](mailto:yinw@tongji.edu.cn), Professor in Tongji University, Chinese Thousand Young Talent
 * [Mr. Mingze Gao](mailto:mingze.gao@ni.com), Master from UCLA, a member of Academic Program in Great China, National Instruments
 

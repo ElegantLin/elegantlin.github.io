@@ -62,8 +62,8 @@ Since you are from different backgrounds, it's necessary to provide some informa
 * The component of an Arduino: [Board Description](https://www.tutorialspoint.com/arduino/arduino_board_description.htm)
 * Set up your IDE: [Download Links](https://www.arduino.cc/en/Main/Software)
     * Further Reading:
-        * Operation System Categories: [Windows](), Mac OS, Linux
-        * System Bits (32/64): Wiki
+        * [The difference between Windows, Mac OS and Linux](https://www.gonet.com.cn/webduirshow-166.html)
+        * [The difference between 32-bit and 64-bit System](https://www.geeksforgeeks.org/difference-32-bit-64-bit-operating-systems/)
 * Run a project
 * **Project I:** Light an LED
     * What is LED?

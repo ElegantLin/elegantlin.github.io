@@ -59,6 +59,10 @@ Since you are from different backgrounds, it's necessary to provide some informa
     >The Arduino Mega is like the UNO’s big brother. It has lots (54!) of digital input/output pins (14 can be used as PWM outputs), 16 analog inputs, a USB connection, a power jack, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started. The large number of pins make this board very handy for projects that require a bunch of digital inputs or outputs (like lots of LEDs or buttons).
     * [Arduino Leonardo](https://www.sparkfun.com/products/11286?_ga=2.87470751.643416203.1536409448-1871409446.1536409448)
     >The Leonardo is Arduino’s first development board to use one microcontroller with built-in USB. This means that it can be cheaper and simpler. Also, because the board is handling USB directly, code libraries are available which allow the board to emulate a computer keyboard, mouse, and more!
+    * [Arduino Nano](https://store.arduino.cc/usa/arduino-nano)
+    >The Arduino Nano is a small, complete, and breadboard-friendly board based on the ATmega328P (Arduino Nano 3.x). It has more or less the same functionality of the Arduino Duemilanove, but in a different package. It lacks only a DC power jack, and works with a Mini-B USB cable instead of a standard one. 
+    Hint: If you want to use Arduino Nano, you have to install the driver first. The instruction is [here](https://sparks.gogo.co.nz/ch340.html). I have tried it on Windows and Mac successfully.
+    
 * The component of an Arduino: [Board Description](https://www.tutorialspoint.com/arduino/arduino_board_description.htm)
 * Set up your IDE: [Download Links](https://www.arduino.cc/en/Main/Software)
     * Further Reading:
@@ -72,7 +76,7 @@ Since you are from different backgrounds, it's necessary to provide some informa
     * Working with Wire
     * Complete Files
 
-### [Arduino Based Projects]()[^2](More are coming...)
+#### [Arduino Based Projects]()[^2](More are coming...)
 * 
 
 ### [Raspberry Pi](https://www.raspberrypi.org/)

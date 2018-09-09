@@ -15,7 +15,7 @@ Although I have used Arduino, Raspberry Pi and so on in several projects. There 
 
 
 # Preface
-One suggestion for you before the journey: *More Searching* using **Google** (never use Baidu, please), *More practice* and *More thinking*.
+One suggestion for you before the journey: *More Searching* using **Google** (never use Baidu, please)[^I], *More practice* and *More thinking*.
 
 Several concepts you should know from the name of this course: [Open Source Software](https://opensource.com/resources/what-open-source), [Open Source Hardware](https://en.wikipedia.org/wiki/Open-source_hardware), [LICENSEs of Open Source software](https://opensource.org/licenses) and [Github](https://en.wikipedia.org/wiki/GitHub).
 
@@ -35,8 +35,7 @@ After keeping the view of course, you have got the strongest weapon to help you 
 
 Further reading of this chapter: 
 * [Arduino vs Microprocessor vs Mircocontroller](https://electronics.stackexchange.com/questions/99434/arduino-vs-microprocessor-vs-microcontroller)
-* [The History of Arduino]
-
+* [The History of Arduino](https://arduinohistory.github.io/)
 #### Prerequisites
 Since you are from different backgrounds, it's necessary to provide some information about the basic electronics. If you have learned these before, you can skip this chapter. However, if you have never learned about Electronics, it is of vital importance to scan these topic [^2]:
 > * [What is Electricity?](https://learn.sparkfun.com/tutorials/what-is-electricity)
@@ -91,10 +90,14 @@ Since you are from different backgrounds, it's necessary to provide some informa
 ### [Processing](https://processing.org/)
 ### [D3.js](https://d3js.org/)
 
-## Suggested Reference
-* *C++ Primer Plus (6th Version)* [Chinese Simplified](https://www.amazon.com/Primer-Plus-%E4%B8%AD%E6%96%87%E7%89%88-%E7%AC%AC6%E7%89%88-%E5%B9%B3%E8%A3%85/dp/B016G3MLWO/ref=sr_1_1?s=books&ie=UTF8&qid=1536418666&sr=1-1&keywords=C%2B%2B+primer+plus%E4%B8%AD%E6%96%87%E7%89%88) & [EN](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321776402)
+## Suggested Reference[^II]
+* *C++ Primer Plus (6th Version)* [CN(Simplified)](https://www.amazon.com/Primer-Plus-%E4%B8%AD%E6%96%87%E7%89%88-%E7%AC%AC6%E7%89%88-%E5%B9%B3%E8%A3%85/dp/B016G3MLWO/ref=sr_1_1?s=books&ie=UTF8&qid=1536418666&sr=1-1&keywords=C%2B%2B+primer+plus%E4%B8%AD%E6%96%87%E7%89%88) & [EN](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321776402)
 * 
 
 ## Reference
 [^1]: https://www.arduino.cc/en/Guide/Introduction
 [^2]: https://learn.sparkfun.com/tutorials/what-is-an-arduino
+
+## Several Points
+[^I]: Google is forbidden in Mainland. I can not share how to do this here or I will be put into jail. If you want to learn more, please contact me offline.
+[^II]: Due to the copyright, I can only put the Amazon link here. If you want to learn more, please contact me offline.

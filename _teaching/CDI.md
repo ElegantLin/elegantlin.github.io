@@ -11,7 +11,7 @@ location: "Shanghai, China"
 
 Hi, visitors. It's my honor to be one of teaching assistants of Open Source Hardware and Programming (55010501) in the Autumn semester of 2018-2019 Academic Year. This page is for the reference in Open Source Hardware and Programming course. You can find the materials in the following links. If you have any questions about this course and the technology you want to know in this course, please be free to contact me. I will be in [D&I](https://www.amap.com/search?query=%E5%90%8C%E6%B5%8E%E5%A4%A7%E5%AD%A6%E8%AE%BE%E8%AE%A1%E5%88%9B%E6%84%8F%E5%AD%A6%E9%99%A2&city=110000&geoobj=116.322888%7C39.835689%7C116.597546%7C39.979481&zoom=12)  every Monday afternoon. 
 
-Although I have used Arduino, Raspberry Pi and so on in several projects. There must be some topics that I have never known about before. In this course, I will learn with you together. I hope you can learn Now, let's begin!
+Although I have used Arduino, Raspberry Pi and so on in several projects. There must be some topics that I have never known about before. In this course, I will learn with you together. I hope you enjoy this journey and get a big A in this course! Now, let's begin!
 
 
 # Preface
@@ -20,7 +20,7 @@ One suggestion for you before the journey: *More Searching* using **Google** (ne
 Several concepts you should know from the name of this course: [Open Source Software](https://opensource.com/resources/what-open-source), [Open Source Hardware](https://en.wikipedia.org/wiki/Open-source_hardware), [LICENSEs of Open Source software](https://opensource.org/licenses) and [Github](https://en.wikipedia.org/wiki/GitHub).
 
 # Device
-After keeping the view of course, you have got the strongest weapon to help you to overcome the difficulties in this journey. The next you should do is to know about the physical world.
+After keeping the view of course, you have got the strongest weapon to help you overcome the difficulties in this journey. The next you should do is to know about the physical world.
 
 ## Processor
 ### [Arduino](https://www.arduino.cc/)

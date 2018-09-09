@@ -15,7 +15,7 @@ Although I have used Arduino, Raspberry Pi and so on in several projects. There 
 
 
 # Preface
-One suggestion for you before the journey: *More Searching* using **Google** (never use Baidu, please)[^I], *More practice* and *More thinking*.
+One suggestion for you before the journey: *More Searching* using **Google** (never use Baidu, please)[^1], *More practice* and *More thinking*.
 
 Several concepts you should know from the name of this course: [Open Source Software](https://opensource.com/resources/what-open-source), [Open Source Hardware](https://en.wikipedia.org/wiki/Open-source_hardware), [LICENSEs of Open Source software](https://opensource.org/licenses) and [Github](https://en.wikipedia.org/wiki/GitHub).
 
@@ -27,7 +27,7 @@ After keeping the view of course, you have got the strongest weapon to help you 
 
 #### Introduction
 
->Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the **microcontroller** on the board. To do so you use the Arduino programming language (based on Wiring), and the Arduino Software (IDE), based on Processing[^1].
+>Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. You can tell your board what to do by sending a set of instructions to the **microcontroller** on the board. To do so you use the Arduino programming language (based on Wiring), and the Arduino Software (IDE), based on Processing[^3].
 
 >Arduino is an open-source platform used for building electronics projects. Arduino consists of both a physical programmable circuit board (often referred to as a microcontroller) and a piece of software, or IDE (Integrated Development Environment) that runs on your computer, used to write and upload computer code to the physical board.The Arduino platform has become quite popular with people just starting out with electronics, and for good reason. Unlike most previous programmable circuit boards, the Arduino does not need a separate piece of hardware (called a programmer) in order to load new code onto the board – you can simply use a USB cable. Additionally, the Arduino IDE uses a simplified version of C++, making it easier to learn to program. Finally, Arduino provides a standard form factor that breaks out the functions of the micro-controller into a more accessible package[^2].
 
@@ -90,14 +90,12 @@ Since you are from different backgrounds, it's necessary to provide some informa
 ### [Processing](https://processing.org/)
 ### [D3.js](https://d3js.org/)
 
-## Suggested Reference[^II]
+## Suggested Reference[^4]
 * *C++ Primer Plus (6th Version)* [CN(Simplified)](https://www.amazon.com/Primer-Plus-%E4%B8%AD%E6%96%87%E7%89%88-%E7%AC%AC6%E7%89%88-%E5%B9%B3%E8%A3%85/dp/B016G3MLWO/ref=sr_1_1?s=books&ie=UTF8&qid=1536418666&sr=1-1&keywords=C%2B%2B+primer+plus%E4%B8%AD%E6%96%87%E7%89%88) & [EN](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321776402)
 * 
 
-## Reference
-[^1]: https://www.arduino.cc/en/Guide/Introduction
-[^2]: https://learn.sparkfun.com/tutorials/what-is-an-arduino
-
-## Points
-[^I]: Google is forbidden in Mainland. I can not share how to do this here or I will be put into jail. If you want to learn more, please contact me offline.
-[^II]: Due to the copyright, I can only put the Amazon link here. If you want to learn more, please contact me offline.
+## Reference & Points
+[^2]: https://www.arduino.cc/en/Guide/Introduction
+[^3]: https://learn.sparkfun.com/tutorials/what-is-an-arduino
+[^1]: Google is forbidden in Mainland. I can not share how to do this here or I will be put into jail. If you want to learn more, please contact me offline.
+[^4]: Due to the copyright, I can only put the Amazon link here. If you want to learn more, please contact me offline.

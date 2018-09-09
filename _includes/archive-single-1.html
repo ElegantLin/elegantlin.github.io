@@ -13,30 +13,62 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
-    <div class="archive__item-teaser">
+    <div class="page__inner-wrap">
       <img src={% if teaser contains "://" %} "{{ teaser }}" {% else %}
         "{{ teaser | prepend: "/images/" | prepend: base_path }}" {% endif %} alt="">
     </div>
     {% endif %}
+    <header>
+      <h1 class="page_title" itemprop="headline">
+      </h1>
+    </header>
 
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-      <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link"
-          aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    <section class="page__content" itemprop="text">
+      {% if post.collection == 'teaching' %}
+      <h2 id="TA">Teaching Assistant</h2>
+      {% if post.type == 'teaching-assistant' %}
+      <p>
+        <b>
+          {% if post.link %}
+          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link"
+              aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+          {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+          {% endif %}
+        </b>
+        <br>
+        {{ post.type }}, <a href="#">{{ post.venue }}</a>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
+      </p>
+      <h2 id="LabVIEW">LabVIEW Courses</h2>
+      {% elsif post.type == 'LabVIEW' %}
+      <p>
+          <b>
+            {% if post.link %}
+            <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link"
+                aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+            {% else %}
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+            {% endif %}
+          </b>
+          <br>
+          {{ post.type }}, <a href="#">{{ post.venue }}</a>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
+        </p>
       {% endif %}
-    </h2>
+      {% endif %}
+      <!-- {% elsif post.collection == 'publications' %} -->
+      <!-- <h2 id="Bio-computation">Bio-Computation</h2> -->
+    </section>
+
 
     {% if post.read_time %}
     <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
 
-    {% if post.collection == 'teaching' %}
-    <p> {{ post.type }}, <a href="#">{{ post.venue }}</a>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+    <!-- {% if post.collection == 'teaching' %}
+    <p> {{ post.type }}, <a href="#">{{ post.venue }}</a>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p> -->
     <!-- {% elsif post.collection == 'publications' && post.publised == False %}
     <p>Published in <i><a href="{{ post.url }}">{{ post.venue }}</a></i>, {{ post.date | default: "1900-01-01" | date:
       "%Y" }} </p>

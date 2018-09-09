@@ -1,7 +1,8 @@
 ---
 title: "Open Source Hardware and Programming (55010501)"
 collection: teaching
-type: "Freshman Course"
+type: "Teaching Assistant"
+target: "Freshmen of D&I"
 permalink: /teaching/Open-Source-Hardware-and-Programming
 venue: "School of Design and Innovation, Tongji University"
 date: Sept. 2018 -- Jan. 2019

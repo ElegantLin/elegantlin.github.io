@@ -26,9 +26,8 @@
     </header>
 
     <section class="page__content" itemprop="text">
-      {% if post.collection == 'teaching' %}
       <h2 id="TA">Teaching Assistant</h2>
-      {% if post.type == 'teaching-assistant' %}
+      {% if post.collection == 'teaching' && post.type == 'teaching-assistant' %}
       <p>
         <b>
           {% if post.link %}
@@ -42,7 +41,7 @@
         {{ post.type }}, <a href="#">{{ post.venue }}</a>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
       </p>
       <h2 id="LabVIEW">LabVIEW Courses</h2>
-      {% elsif post.type == 'LabVIEW' %}
+      {% elsif post.collection == 'teaching' && post.type == 'LabVIEW' %}
       <p>
           <b>
             {% if post.link %}
@@ -56,9 +55,6 @@
           {{ post.type }}, <a href="#">{{ post.venue }}</a>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
         </p>
       {% endif %}
-      {% endif %}
-      <!-- {% elsif post.collection == 'publications' %} -->
-      <!-- <h2 id="Bio-computation">Bio-Computation</h2> -->
     </section>
 
 

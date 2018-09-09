@@ -3,17 +3,17 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Projects"
-    url: /talks/
+  # - title: "Projects"
+  #   url: /talks/
 
-  - title: "Internship"
-    url: /intership/
+  # - title: "Internship"
+  #   url: /intership/
 
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Volunteer"
-    url: /volunteer/
+  # - title: "Volunteer"
+  #   url: /volunteer/
         
   - title: "Blog Posts"
     url: /year-archive/
@@ -21,5 +21,5 @@ main:
   - title: "CV"
     url: /files/Zonglin Di CV.pdf
     
-  - title: "More"
-    url: /about/
+  # - title: "More"
+  #   url: /about/

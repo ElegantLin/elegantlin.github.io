@@ -36,16 +36,15 @@
 
 
     {% if post.collection == 'teaching' %}
-    <p><b>{{ post.type }}</b> , <a href="#">{{ post.venue }}</a>, {{ post.date | default: "1900-01-01" }} </p>
+    <p><b>{{ post.type }}</b> , <a href="#">{{ post.venue }}</a>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% endif %}
 
     {% if post.collection == 'publications' %}
     <p>{{ post.citation }}
     {% if post.publications == 'T' %}
-    <br>Published in</p>
+    <br>Published in {{ post.venue }}</p>
     {% elsif post.publications == 'F' %}
-    <br>Submitted to 
-    <a href="{{ post.confurl }}">{{ post.venue }}</a> {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+    <br>Submitted to {{ post.venue }}</p>
     {% endif %}
     {% endif %}
 

@@ -1,10 +1,10 @@
 ---
-title: "Python Programming"
+title: "Python Programming (10064701)"
 collection: teaching
 type: "Teaching Assistant"
 permalink: /teaching/Python
-venue: "Department of Computer and Technology, Tongji University"
-date: 2018-09-10
+venue: "Department of Computer Science and Technology, Tongji University"
+date: Sept. 2018 -- Jan. 2019
 location: "Shanghai, China"
 ---
 

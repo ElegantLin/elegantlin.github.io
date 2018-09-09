@@ -4,16 +4,15 @@ collection: publications
 permalink: /publication/GeoAI
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 date: 2018-09-05
-publication: F
-venue: '<a href='#'>GeoAI 2018</a>, a workshop in International Conference on Advances in Geographic Information Systems <i>(ACM SIGSPATIAL 2018)</i>'
-confurl: https://udi.ornl.gov/geoai
+publications: F
+venue: '<i><a href="https://udi.ornl.gov/geoai">GeoAI 2018</a></i>, a workshop in International Conference on Advances in Geographic Information Systems <i>(<a href="https://sigspatial2018.sigspatial.org">ACM SIGSPATIAL 2018</a>)</i>'
+confurl: 
 citation: 'Tao Sun, <u>Zonglin Di</u>, Yin Wang'
 ---
-This paper is about the number 2. The number 3 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
-
-Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+Abstract
+---
+>Road extraction is a fundamental problem in remote sensing and mapping. Recent advances in Convolution Neural Network (CNN) have contributed significant improvements in automatic road ex- traction from satellite imagery, albeit prediction gaps challenge post-processing. Some of the gaps are hard to bridge by satellite imagery alone due to dense vegetation, road construction, and building shadows. In this paper, we combine satellite imagery with GPS data to improve road extraction quality. Our dataset includes 100cm/pixel satellite imagery and 192-hour taxi GPS traces from the urban area of Beijing. Experimenting with various layers to com- bine GPS data, our CNN model outperforms the RGB-only model by nearly 13% on mean IoU.
 
 <!-- ---
 title: "Paper Title Number 2"

@@ -98,6 +98,6 @@ Since you are from different backgrounds, it's necessary to provide some informa
 [^1]: https://www.arduino.cc/en/Guide/Introduction
 [^2]: https://learn.sparkfun.com/tutorials/what-is-an-arduino
 
-## Several Points
+## Points
 [^I]: Google is forbidden in Mainland. I can not share how to do this here or I will be put into jail. If you want to learn more, please contact me offline.
 [^II]: Due to the copyright, I can only put the Amazon link here. If you want to learn more, please contact me offline.

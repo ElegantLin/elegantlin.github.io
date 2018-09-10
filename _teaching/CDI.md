@@ -67,9 +67,19 @@ Since you are from different backgrounds, it's necessary to provide some informa
 
 * The component of an Arduino: [Board Description](https://www.tutorialspoint.com/arduino/arduino_board_description.htm)
 * Set up your IDE: [Download Links](https://www.arduino.cc/en/Main/Software)
-    * Further Reading:
-        * [The difference between Windows, Mac OS and Linux](https://www.gonet.com.cn/webduirshow-166.html)
-        * [The difference between 32-bit and 64-bit System](https://www.geeksforgeeks.org/difference-32-bit-64-bit-operating-systems/)
+* How to check your environment setup (MAC OS X): 
+    1. Set up your IDE based on the instruction above
+    2. Connect your PC with your Arduino board. (Make sure your Arduino board is Arduino UNO)
+    3. Open your Arduino Software
+    4. Click *Tools* -> *Board* -> *'Arduino UNO'*
+    5. Click *Tools* -> *Port* -> Select Port different from your PC, e.g. "usbmodem1411(Arduino/Geniuno UNO)
+    6. If you can find the port, that means you have set up your environment successfully.
+* How to check your environment setup (Windows): [links](https://www.arduino.cc/en/Guide/ArduinoUno)
+
+* Further Reading:
+    * [The difference between Windows, Mac OS and Linux](https://www.gonet.com.cn/webduirshow-166.html)
+    * [The difference between 32-bit and 64-bit System](https://www.geeksforgeeks.org/difference-32-bit-64-bit-operating-systems/)
+
 * Run a project
 * **Project I:** Light an LED
     * What is LED?

@@ -46,6 +46,7 @@ Since you are from different backgrounds, it's necessary to provide some informa
 > * [Logic Levels](https://learn.sparkfun.com/tutorials/logic-levels)
 > * [Digital Logic](https://learn.sparkfun.com/tutorials/digital-logic)
 > * [Analog vs. Digital](https://learn.sparkfun.com/tutorials/analog-vs-digital)
+> * [How to use Digital Multi-meter (DMM)](https://baijiahao.baidu.com/s?id=1567351373923100&wfr=spider&for=pc)
 
 #### Tutorials
 * Figure out your Arduino (Sorry for link directly to a store page..., I am so lazy...)

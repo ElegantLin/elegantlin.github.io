@@ -9,6 +9,29 @@ date: Sept. 2018 -- Jan. 2019
 location: "Shanghai, China"
 ---
 
+<!-- TOC -->
+
+- [Preface](#preface)
+- [Device](#device)
+    - [Processor](#processor)
+        - [[Arduino](https://www.arduino.cc/)](#arduinohttpswwwarduinocc)
+            - [Introduction](#introduction)
+            - [Prerequisites](#prerequisites)
+            - [Tutorials](#tutorials)
+            - [[Arduino Based Projects]()[^2](More are coming...)](#arduino-based-projects^2more-are-coming)
+        - [[Raspberry Pi](https://www.raspberrypi.org/)](#raspberry-pihttpswwwraspberrypiorg)
+    - [Sensor](#sensor)
+        - [[Real Sense](https://www.intel.com/content/www/us/en/architecture-and-technology/realsense-overview.html)](#real-sensehttpswwwintelcomcontentwwwusenarchitecture-and-technologyrealsense-overviewhtml)
+        - [[Kinect](https://en.wikipedia.org/wiki/Kinect)](#kinecthttpsenwikipediaorgwikikinect)
+    - [Data Visualization](#data-visualization)
+        - [[Processing](https://processing.org/)](#processinghttpsprocessingorg)
+        - [[D3.js](https://d3js.org/)](#d3jshttpsd3jsorg)
+    - [Suggested Reference[^4]](#suggested-reference^4)
+    - [Frequently Asked (Coming Soon)](#frequently-asked-coming-soon)
+    - [Reference & Points](#reference--points)
+
+<!-- /TOC -->
+
 Hi, visitors. It's my honor to be one of teaching assistants of Open Source Hardware and Programming (55010501) in the Autumn semester of 2018-2019 Academic Year. This page is for the reference in Open Source Hardware and Programming course. You can find the materials in the following links. If you have any questions about this course and the technology you want to know in this course, please be free to contact me. I will be in [D&I](https://www.amap.com/search?query=%E5%90%8C%E6%B5%8E%E5%A4%A7%E5%AD%A6%E8%AE%BE%E8%AE%A1%E5%88%9B%E6%84%8F%E5%AD%A6%E9%99%A2&city=110000&geoobj=116.322888%7C39.835689%7C116.597546%7C39.979481&zoom=12)  every Monday afternoon. 
 
 Although I have used Arduino, Raspberry Pi and so on in several projects. There must be some topics that I have never known about before. In this course, I will learn with you together. I hope you enjoy this journey and get a big A in this course! Now, let's begin!
@@ -109,6 +132,11 @@ Since you are from different backgrounds, it's necessary to provide some informa
 ## Suggested Reference[^4]
 * *C++ Primer Plus (6th Version)* [CN(Simplified)](https://www.amazon.com/Primer-Plus-%E4%B8%AD%E6%96%87%E7%89%88-%E7%AC%AC6%E7%89%88-%E5%B9%B3%E8%A3%85/dp/B016G3MLWO/ref=sr_1_1?s=books&ie=UTF8&qid=1536418666&sr=1-1&keywords=C%2B%2B+primer+plus%E4%B8%AD%E6%96%87%E7%89%88) & [EN](https://www.amazon.com/Primer-Plus-6th-Developers-Library/dp/0321776402)
 * 
+
+## Frequently Asked (Coming Soon)
+* How to setup environment?
+* What is the meaning of choices for every board or processor in Arduino Software?
+
 
 ## Reference & Points
 [^2]: https://www.arduino.cc/en/Guide/Introduction

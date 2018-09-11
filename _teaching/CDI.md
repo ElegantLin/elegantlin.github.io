@@ -11,10 +11,10 @@ location: "Shanghai, China"
 
 <!-- TOC -->
 
-- [Preface](#preface)
-- [Device](#device)
-    - [Processor](#processor)
-        - [[Arduino](https://www.arduino.cc/)](#arduinohttpswwwarduinocc)
+- [<div id="preface">Preface</div>](#div-idprefaceprefacediv)
+- [<div id="device">Device</div>](#div-iddevicedevicediv)
+    - [<div id="processor">Processor</div>](#div-idprocessorprocessordiv)
+        - [<div id="arduino">[Arduino](https://www.arduino.cc/)</div>](#div-idarduinoarduinohttpswwwarduinoccdiv)
             - [Introduction](#introduction)
             - [Prerequisites](#prerequisites)
             - [Tutorials](#tutorials)
@@ -37,16 +37,16 @@ Hi, visitors. It's my honor to be one of teaching assistants of Open Source Hard
 Although I have used Arduino, Raspberry Pi and so on in several projects. There must be some topics that I have never known about before. In this course, I will learn with you together. I hope you enjoy this journey and get a big A in this course! Now, let's begin!
 
 
-# Preface
+#<div id="preface">Preface</div>
 One suggestion for you before the journey: *More Searching* using **Google** (never use Baidu, please)[^1], *More practice* and *More thinking*.
 
 Several concepts you should know from the name of this course: [Open Source Software](https://opensource.com/resources/what-open-source), [Open Source Hardware](https://en.wikipedia.org/wiki/Open-source_hardware), [LICENSEs of Open Source software](https://opensource.org/licenses) and [Github](https://en.wikipedia.org/wiki/GitHub).
 
-# Device
+#<div id="device">Device</div>
 After keeping the view of course, you have got the strongest weapon to help you overcome the difficulties in this journey. The next you should do is to know about the physical world.
 
-## Processor
-### [Arduino](https://www.arduino.cc/)
+##<div id="processor">Processor</div>
+### <div id="arduino">[Arduino](https://www.arduino.cc/)</div>
 
 #### Introduction
 

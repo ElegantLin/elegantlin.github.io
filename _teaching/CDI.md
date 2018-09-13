@@ -96,7 +96,18 @@ Since you are from different backgrounds, it's necessary to provide some informa
 
 ##### The component of an Arduino: 
 * [Board Description](https://www.tutorialspoint.com/arduino/arduino_board_description.htm)
+
 ##### Set up & check your environment 
+* Download the installer according to your Operating System (OS)
+    * Windows: https://www.arduino.cc/download.php?f=/arduino-nightly-windows.zip
+    * Mac OS: https://www.arduino.cc/download.php?f=/arduino-nightly-macosx.zip
+    * Baidu Netdisk ([@林俊烨]()): https://pan.baidu.com/s/1KzVbEkWKCTBu6WfxdEUAVg (Password：cclv)
+* Extract the zip files you have downloaded before
+    * Mac OS: double-click the file and it will be extracted automatically.
+    * Windows: Right-click the file and select "Extract (解压)".
+* Installation
+    * Mac OS: drag the extracted file (解压出来的文件) to Application (应用程序)
+    * Windows: 
 
 * Further Reading:
     * [The difference between Windows, Mac OS and Linux](https://www.gonet.com.cn/webduirshow-166.html)

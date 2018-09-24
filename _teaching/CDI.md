@@ -24,7 +24,7 @@ location: "Shanghai, China"
                 - [Types of Arduino](#types-of-arduino)
                 - [The component of an Arduino:](#the-component-of-an-arduino)
                 - [Set up & check your environment](#set-up--check-your-environment)
-            - [Arduino Based Projects](#arduino-based-projects)
+            - [Frequently Asked Question](#frequently-asked-question)
         - [Raspberry Pi](#raspberry-pi)
     - [Sensor](#sensor)
         - [Real Sense](#real-sense)
@@ -113,23 +113,11 @@ Since you are from different backgrounds, it's necessary to provide some informa
     * [The difference between Windows, Mac OS and Linux](https://www.gonet.com.cn/webduirshow-166.html)
     * [The difference between 32-bit and 64-bit System](https://www.geeksforgeeks.org/difference-32-bit-64-bit-operating-systems/)
 
-* Blink Program
-```Arduino
-void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-}
-
-// the loop function runs over and over again forever
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                       // wait for a second
-}
-```
-#### Arduino Based Projects
-For your contribution
+#### Frequently Asked Question
+* [What is Baud Rate?](https://www.arduino.cc/en/Serial/Begin)
+* [The tech notes of Arduino](https://www.arduino.cc/en/Tutorial/Foundations)
+* [PWM](https://www.arduino.cc/en/Tutorial/Foundations)
+* [RGB Basic](https://www.w3schools.com/colors/colors_rgb.asp)
 
 ### Raspberry Pi
 

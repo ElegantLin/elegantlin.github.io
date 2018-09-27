@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/GeoAI
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
 date: 2018-09-05
-publications: F
+publications: T
 venue: '<i><a href="https://udi.ornl.gov/geoai">GeoAI 2018</a></i>, a workshop in International Conference on Advances in Geographic Information Systems <i>(<a href="https://sigspatial2018.sigspatial.org">ACM SIGSPATIAL 2018</a>)</i>'
 confurl: 
 citation: 'Tao Sun, <u>Zonglin Di</u>, Yin Wang'

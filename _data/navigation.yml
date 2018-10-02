@@ -20,6 +20,9 @@ main:
     
   - title: "CV"
     url: /files/Zonglin Di CV.pdf
+
+  - title: "Alumb"
+    url: /album/
     
   # - title: "More"
   #   url: /about/

@@ -1,0 +1,5 @@
+= Deep Learning
+
+~~~
+Save the file as +index.jemdoc+, say, and simply call +jemdoc index+ (after [download.html downloading jemdoc], of course).
+~~~

@@ -1,17 +1,23 @@
+# jemdoc: menu{MENU1}{index.html}
 = Deep Learning
 
 ~~~
-This is the homepage of \Deep Learning\ course given by Prof. Yin Wang from Department of Computer Science and Technology, School of Electrical and Information Engineering.
+This is the homepage of \Deep Learning\ course given by [http://web.eecs.umich.edu/~yinw/ Prof. Yin Wang] from Department of Computer Science and Technology, School of Electrical and Information Engineering.
 As is known to all, deep learning is a powerful tool in many aspects such as computer vision, natural language processing, recommendation system and so on.
 Prof. Wang started this course in Tongji after he joined this college in Fall, 2018.
 In the course, he will introduce the fundamental of deep learning and its applications.
 Besides, he will also invite the pioneers from the academy and industry to give lectures to bring the latest news in deep learning. 
 ~~~
 
-== 2019--2020 Academic Year
-Coming Soon
+== Instructor
+- [http://web.eecs.umich.edu/~yinw/ Prof. Yin Wang]
 
-== 2018--2019 Academic Year
+
+== Teaching Assistant
+- Bingchen Zhao (Fall, 2019-2020)
+- Zonglin Di (Spring, 2018-2019, Fall, 2019-2020)
+- Weiquan Huang (Spring, 2018-2019)
+- Zihao Xu (Spring, 2018-2019)
 
 == References
 - [http://cs231n.stanford.edu/, CS 231 from Stanford University]

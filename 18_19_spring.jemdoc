@@ -1,0 +1,34 @@
+# jemdoc: menu{MENU1}{index.html}
+= Deep Learning (Spring, 2018-2019)
+
+~~~
+This is the homepage of \Deep Learning\ course (Spring, 2018-2019) given by [http://web.eecs.umich.edu/~yinw/ Prof. Yin Wang] from Department of Computer Science and Technology, School of Electrical and Information Engineering.
+This is the first time that we give this course in Siping Campus.
+We welcome student from any major besides Computer Science.
+~~~
+
+== Course Information
+- Classroom: 
+- Office Time:
+
+
+== Syllabus
+- Week 1:
+- Week 2:
+
+
+== Assignments
+- Assignment 1: Build a linear regression and logistic regression on Iris and Computer Hardware dataset. If you can build it from the bottom rather than just use the integrated package, you will get a higher credit.
+- Assignment 2: Build a softmax classifier on Iris dataset and a 3-layer neural network on MNIST dataset. If you can build it from the bottom rather than just use the integrated package, you will get a higher credit.
+- Final Project: Finish a complete project using deep learning *individually*. The project on your own major will be recommended.
+
+== Grading Policy
+The tentative weightages for each component of the course are as follows:
+- Assignments 1 (10%)
+- Assignments 2 (10%)
+- Final project (70%)
+- Oral presentation (Extra 10%)
+
+*NOTE*: This course does not have an end-semester examination. Instead, there will be a project evaluation towards the end of the course.
+
+== Course Highlights

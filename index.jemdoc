@@ -1,25 +1,26 @@
-# jemdoc: menu{MENU}{index.html}, showsource
-= Brendan O'Donoghue
+# jemdoc: menu{MENU}{index.html}
+= Zonglin Di
 
 ~~~
-{}{img_left}{profile.JPG}{Brendan O'Donoghue}{200}(200}
-Brendan O'Donoghue, Ph.D. \n
-Research Scientist at [http://deepmind.com/ Google DeepMind] \n
-Former advisor: [http://www.stanford.edu/~boyd/ Professor Stephen Boyd] \n
-[https://scholar.google.com/citations?user=0Pzjj-cAAAAJ Google scholar profile] \n
-\n
-Contact: [bodonoghue85@gmail.com email], [https://www.linkedin.com/in/bodono linkedin], [https://github.com/bodono github]
+{}{img_left}{profile.JPG}{Zonglin DI}{200}(200}
+Zonglin DI, B.E. \n
+Research Assistant supervised by [http://web.eecs.umich.edu/~yinw/ Prof. Yin Wang] \n
+Former advisor: [https://www.brunel.ac.uk/people/asoke-k-nandi/ Prof. Asoke Nandi] \n
+[https://web.njit.edu/~zhou/ Prof. Mengchu Zhou] \n
+[https://scholar.google.com.hk/citations?user=t8K4P4wAAAAJ&hl=zh-CN/ Prof. Qi Kang]\n
+Contact: [elegant.lin21@gmail.com email]
 ~~~
 
 == Education
-- Ph.D., M.S., [http://ee.stanford.edu Electrical Engineering], [http://www.stanford.edu Stanford University],
-  January 2013 \n
-- B.A., M.A., M.Eng., Information and Computer Engineering,
-  [http://www.cai.cam.ac.uk/ Gonville and Caius College],
-  [http://www.cam.ac.uk/ Cambridge University], June 2007
+- B.E. Control Science and Engineering, [http://https://en.tongji.edu.cn/ Tongji University], Sept 2014 to June 2019
 
 == Interests and current research
-- Convex optimization
-- Machine Learning
-- Reinforcement Learning
-- Dynamic systems and control
+- Satellite Image Processing
+- Imbalance Classification
+- Bio-computation
+
+== Short Bio
+Coming Soon
+
+== Publications
+Coming Soon

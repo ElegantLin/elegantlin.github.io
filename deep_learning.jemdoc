@@ -1,0 +1,40 @@
+# jemdoc: menu{MENU1}{index.html}
+= Deep Learning
+
+~~~
+This is the homepage of \Deep Learning\ course given by [http://web.eecs.umich.edu/~yinw/ Prof. Yin Wang] from Department of Computer Science and Technology, School of Electrical and Information Engineering, Tongji University.
+As is known to all, deep learning is a powerful tool in many aspects such as computer vision, natural language processing, recommendation system and so on.
+Prof. Wang started this course in Tongji after he joined this college from Facebook in Fall, 2017.
+In the course, he will introduce the fundamental of deep learning and its applications.
+Besides, he will also invite the pioneers from the academy and industry to give lectures to bring the latest news in deep learning. 
+We welcome everyone who is interested in this course to join this course.
+~~~
+
+== News
+- \[2019-06\] Deep Learning will open in Jiading Compus in this fall and 70 positions are available.
+- \[2019-06\] 15 students finished their deep learning course in Siping Campus.
+- \[2019-05\] We invited a researcher from [https://megvii.com/ Megvii, Shanghai] to give us a lecture about detection.
+
+
+== Instructor
+- [http://web.eecs.umich.edu/~yinw/ Prof. Yin Wang]
+
+
+== Teaching Assistants
+- Bingchen Zhao (Fall, 2019-2020)
+- [https://elegantlin.github.io/index.html Zonglin Di] (Spring, 2018-2019; Fall, 2019-2020)
+- Weiquan Huang (Spring, 2018-2019)
+- Zihao Xu (Spring, 2018-2019)
+
+
+== Prerequisites
+- Higher Mathematics (I, II)
+- Linear Algebra
+- The Fundamental of Python Programming
+
+
+== References
+- [http://cs231n.stanford.edu/, CS 231 from Stanford University]
+- [http://cs229.stanford.edu/, CS 229 from Stanford University]
+- [http://web.stanford.edu/class/cs224n/, CS 224n from Stanford University]
+- [https://www.deeplearningbook.org/, /Deep Learning/]

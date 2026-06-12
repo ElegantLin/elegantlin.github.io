@@ -1,198 +1,531 @@
-<!--
-Frankly speaking, I think it is just a waste of time in Tongji if you want to study EECS.
-Almost all the fundings are placed in civil engineering, architecture, automobile and design.
-You can never imagine the dean of EECS is from the school of automobile.
-Ironically, the students in automobile are learning how to code. 
-Everyone knows that 21st century is the century of information.
-Attending most of courses is totally a waste of time.
-I still remembered my terrible experience of Linear Algebra when I was a freshman.
-There is a Chinese post (https://zhuanlan.zhihu.com/p/199665495) about the textbook in Tongji.
-In the post, the author claimed the textbook written by Tongji a shame of textbooks and 10000+ people like this post
-I cannot agree with him more.
-The textbook gives you no understanding about vectors, linear spaces, etc.
-It can only help you solve the exam like MATLAB.
-Although some teachers in Tongji helped me a lot and I cannot be what I am now without their help,
-I hope the incoming undergraduate who are willing to study something useful please please DO NOT choose Tongji.
-If I had known Tongji's true situation before I went there, I would definitely go to Xi'an Jiaotong, Wuhan, etc. 
-
-滑稽一下：电信学院年年发什么书签纪念品，不如发本密歇根大学的线性代数呢...
-
-The comment from one of my friend who is in one of FLAG on Tongji (Chinese) is 
-不能再同意。四年书读下来，我对同济大学有了一个清晰的定位，这个学校适合两种学生：致力于土建行业的和本科毕业打算立马在上海工作的，非常不适合搞科研以及打算继续深造的。
-同济大学大一入学新生高考水平全国十名左右，毕业生质量可能二十不到不是没有原因的。就我看来至少有以下几个问题：
-第一，教授对教学任务重视程度严重不足。大一大二基础课还有几个认真负责的好老师，到了专业课我只能呵呵，
-有些老师水平可能很高，但是从来不认真备课不认真对待课堂，上课就是念课本念ppt，让学生如何热爱学习？
-地理位置确实是同济的一大优势，也同样为老师提供了大量的就业机会，下课之后找老师基本是找不到的，稍微资历深一点的老师大部分办公时间都在飞往各地开会的飞机上。
-
-第二，课程设置严重落伍，上个世纪几十年代的教材还在用，上个世纪的课程还在开，说得好听叫重视基础，说得难听就是泥古不化。
-四年来我学到的自己感觉有用的知识百分之九十来自于自学，有用的两门课一门是c++程序设计，一门是线性代数还是自己看视频学的。
-
-第三，学校资源分配严重不均，这学期去设创学院做助教，一节课的经费可能就能上万，但是我们xx学院呢？一门教生产线的课老师想带我们去公司看看都出不起钱。
-土建类可能全国排名A或A+，其他eecs甚至都找不到同济大学的名字还好意思说自己是综合性工科强校。
-土木建筑确实是同济的强势学科，强势到所有其他学科都要为他们服务，即使xx学院也是紧紧围绕xxxx行业要求来安排课程。
-
-第四，关于嘉定校区，无力吐槽了，除了上课之外学校没有提供任何提高综合素质的资源，
-讲座展览交流实习这些我认为对一个本科生来说开阔视野最重要的途径被往返四个小时的地铁完全卡死，和技校毫无区别，甚至可能还不如技校起码人家教的是实用的技术。
-
-同济大学是我的母校，但我并不以之为荣，因为我不是土木建筑的学生。
-我对这所学校毫无感情，甚至有点希望在大家心目中的地位尽快下降到他实际的水平不再坑害更多对同济充满幻想的学弟学妹。
-我亲眼看着身边太多天赋异禀前途大好的同学被这所学校土建之外的学院阻碍发展，我很后悔当时选择了同济。
-
-如何治理学校是那些天天开会的大人物考虑的事情，我等屁民的话既不会传入他们的耳朵更不会让他们有任何的反省，
-也无非是茶前饭后发发牢骚，学生们想到同济大学的种种不好也无非激愤一下发出一声哎呦卧槽的感叹，
-第二天嘉定校区太阳照常升起，这些学生还是要去那唯一的食堂打饭，还是得去课堂上和老师心照不宣地互相表演，毕竟同济大学几十年都这么苟过来了。 
--->
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<link rel="shortcut icon" type="image/x-icon" href="https://ucsdtritons.com/images/logos/site/site.png"/>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zonglin Di</title>
+<meta name="description" content="Zonglin Di — Ph.D. candidate at UC Santa Cruz working on vision-language models, LLM post-training & agents, and trustworthy AI.">
+<style>
+  :root {
+    --text: #2b2b2b;
+    --muted: #6b6b6b;
+    --link: #1772d0;
+    --line: #e6e6e6;
+    --accent-bg: #f5f7fa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background: #ffffff;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: 920px; margin: 0 auto; padding: 0 24px 80px; }
+
+  /* ---------- top nav ---------- */
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255,255,255,0.95);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(6px);
+  }
+  nav .container { padding: 10px 24px; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+  nav a { color: var(--muted); font-size: 14.5px; font-weight: 500; }
+  nav a:hover { color: var(--link); text-decoration: none; }
+
+  /* ---------- header ---------- */
+  header { padding: 48px 0 8px; }
+  header h1 { margin: 0 0 4px; font-size: 34px; font-family: Georgia, "Times New Roman", serif; font-weight: 600; }
+  header .role { margin: 0 0 10px; color: var(--muted); font-size: 17px; }
+  header .interests { margin: 0 0 14px; font-size: 15px; }
+  header .interests span {
+    display: inline-block; background: var(--accent-bg); border: 1px solid var(--line);
+    border-radius: 999px; padding: 2px 12px; margin: 2px 4px 2px 0; font-size: 13.5px; color: #444;
+  }
+  header .links { font-size: 15px; }
+  header .links a { margin-right: 14px; white-space: nowrap; }
+
+  /* ---------- sections ---------- */
+  section { margin-top: 44px; }
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px; font-weight: 600; margin: 0 0 18px;
+    padding-bottom: 8px; border-bottom: 2px solid var(--line);
+  }
+  h3 { font-size: 17px; margin: 26px 0 10px; }
+
+  /* ---------- publications ---------- */
+  .pubfilter { display: flex; gap: 8px; margin-bottom: 22px; }
+  .pubfilter button {
+    font: inherit; font-size: 13.5px; font-weight: 500; color: #444;
+    background: #fff; border: 1px solid var(--line); border-radius: 999px;
+    padding: 4px 14px; cursor: pointer;
+  }
+  .pubfilter button:hover { border-color: var(--link); color: var(--link); }
+  .pubfilter button.active { background: #eef3fb; border-color: #234f8b; color: #234f8b; font-weight: 600; }
+  #publications.first-only .not-core { display: none; }
+
+  .paper { display: flex; gap: 22px; margin-bottom: 26px; align-items: flex-start; }
+  .paper img {
+    width: 195px; aspect-ratio: 4 / 3; object-fit: cover; flex-shrink: 0;
+    border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+    transition: transform .15s ease;
+  }
+  .paper img:hover { transform: scale(1.03); }
+  .paper .title { font-weight: 600; font-size: 16.5px; }
+  .paper .authors { font-size: 14.5px; color: #555; margin-top: 2px; }
+  .paper .authors b { color: var(--text); }
+  .paper .venue { font-size: 14px; margin-top: 2px; }
+  .paper .venue .badge {
+    display: inline-block; background: #eef3fb; color: #234f8b;
+    border-radius: 4px; padding: 0 7px; font-weight: 600; font-size: 13px;
+  }
+  .paper .venue .tag {
+    display: inline-block; background: var(--accent-bg); border: 1px solid var(--line);
+    color: #666; border-radius: 4px; padding: 0 7px; font-size: 12.5px; margin-left: 5px;
+  }
+  .paper .desc { font-size: 14.5px; color: #444; margin-top: 6px; }
+  ul.desc { font-size: 14.5px; color: #444; margin: 6px 0 0; padding-left: 18px; }
+  ul.desc li { margin-bottom: 3px; }
+  .plinks { font-size: 14px; margin-top: 4px; }
+  .plinks a { margin-right: 10px; }
+
+  ul.compact { padding-left: 20px; }
+  ul.compact li { margin-bottom: 8px; font-size: 14.5px; color: #555; }
+
+  /* ---------- projects ---------- */
+  .project { margin-bottom: 18px; }
+  .project .title { font-weight: 600; }
+  .project .desc { font-size: 14.5px; color: #444; }
+
+  /* ---------- experience ---------- */
+  .exp { display: flex; gap: 16px; margin-bottom: 16px; }
+  .exp .when { min-width: 175px; color: var(--muted); font-size: 14px; flex-shrink: 0; padding-top: 2px; }
+  .exp .what .where { font-weight: 600; }
+  .exp .what .role2 { font-size: 14.5px; color: #555; }
+  .exp .what .desc { font-size: 14.5px; color: #444; }
+
+  footer { margin-top: 60px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+
+  @media (max-width: 700px) {
+    header { padding-top: 32px; }
+    .paper { flex-direction: column; }
+    .paper img { width: 100%; max-width: 360px; }
+    .exp { flex-direction: column; gap: 2px; }
+    .exp .when { min-width: 0; }
+  }
+</style>
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Zonglin Di</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="zonglin.pdf">CV</a></div>
-<!-- <div class="menu-item"><a href="research.pdf">Research Summary</a></div> -->
-<!-- <div class="menu-item"><a href="internship.html">Internship</a></div> -->
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Zonglin Di</h1>
+
+<nav>
+  <div class="container">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#misc">Awards &amp; Service</a>
+  </div>
+</nav>
+
+<div class="container">
+
+<header id="about">
+  <div>
+    <h1>Zonglin Di</h1>
+    <p class="role">Ph.D. Candidate · Computer Science &amp; Engineering · UC Santa Cruz</p>
+    <p class="interests">
+      <span>Vision-Language Models (On-device Unified Model)</span>
+      <span>Desktop Use Agents</span>
+      <span>Trustworthy AI</span>
+      <span>Weakly / Self-supervised Learning</span>
+    </p>
+    <p class="links">
+      <a href="mailto:zdi@ucsc.edu">✉ Email</a>
+      <a href="https://scholar.google.com/citations?user=t8K4P4wAAAAJ">🎓 Google Scholar</a>
+      <a href="https://github.com/ElegantLin">🐙 GitHub</a>
+      <a href="cv_.pdf">📄 CV</a>
+    </p>
+  </div>
+</header>
+
+<section>
+  <p>
+    I am a Ph.D. candidate in Computer Science &amp; Engineering at <a href="https://engineering.ucsc.edu/">UC Santa Cruz</a>,
+    advised by <a href="http://www.yliuu.com/">Prof. Yang Liu</a>. My research focuses on
+    <b>vision-language models (On-device Unified Model)</b>, <b>desktop use agents</b>, and <b>trustworthy AI</b>
+    (machine unlearning, learning with noisy labels, and federated learning).
+  </p>
+  <p>
+    I am currently a research intern at <b><a href="https://research.adobe.com/">Adobe Research</a></b>, distilling cloud-scale unified multimodal models into
+    on-device students. Previously, I interned at <b><a href="https://machinelearning.apple.com/">Apple</a></b> (proactive AI and streaming video-language understanding)
+    and twice more at <b><a href="https://research.adobe.com/">Adobe Research</a></b> (RLHF for LLMs; vision-language representation learning).
+    Before UCSC, I received my M.S. from <b><a href="https://ucsd.edu/">UC San Diego</a></b>, where I worked with
+    <a href="https://xiaolonw.github.io/">Prof. Xiaolong Wang</a> on self-supervised learning,
+    and my B.S. from <b><a href="https://en.tongji.edu.cn/">Tongji University</a></b>.
+  </p>
+</section>
+
+<section id="publications" class="first-only">
+  <h2>Publications</h2>
+
+  <div class="pubfilter">
+    <button type="button" data-mode="first" class="active">First-authored / Core contributor</button>
+    <button type="button" data-mode="all">All</button>
+  </div>
+  <p style="font-size:13.5px; color:var(--muted); margin:-10px 0 20px;">* equal contribution</p>
+
+  <div class="paper not-core">
+    <img src="images/papers/capnav.png" alt="CapNav">
+    <div>
+      <div class="title"><a href="https://arxiv.org/abs/2602.18424">CapNav: Benchmarking Vision Language Models on Capability-conditioned Indoor Navigation</a></div>
+      <div class="authors">Xia Su, Ruiqi Chen, Benlin Liu, Jingwei Ma, <b>Zonglin Di</b>, Ranjay Krishna, Jon E. Froehlich</div>
+      <div class="venue"><span class="badge">CVPR 2026</span><span class="tag">VLM</span></div>
+      <div class="desc">A benchmark that tests whether vision-language models can plan indoor navigation routes conditioned on a user's physical capabilities, revealing how far current VLMs are from capability-aware, accessibility-conscious navigation.</div>
+    </div>
+  </div>
+
+  <div class="paper">
+    <img src="images/papers/label-smoothing.png" alt="Label Smoothing Improves Machine Unlearning">
+    <div>
+      <div class="title"><a href="https://arxiv.org/abs/2406.07698">Label Smoothing Improves Machine Unlearning</a></div>
+      <div class="authors"><b>Zonglin Di</b>, Zhaowei Zhu, Jinghan Jia*, Jiancheng Liu*, Bo Jiang, Zafar Takhirov, Yuanshun Yao, Sijia Liu, Yang Liu</div>
+      <div class="venue"><span class="badge">ICLR 2026</span><span class="tag">Trustworthy AI</span><span class="tag">Machine Unlearning</span></div>
+      <div class="desc">We reveal a connection between label smoothing and machine unlearning: a simple negative label-smoothing recipe makes models forget target data more thoroughly while preserving utility on the data that should be remembered.</div>
+    </div>
+  </div>
+
+  <div class="paper">
+    <img src="images/papers/difftell.png" alt="DiffTell">
+    <div>
+      <div class="title"><a href="https://collomosse.com/pubs/Di-ICCV-2025.pdf">DiffTell: A Comprehensive Dataset for Image Difference Captioning</a></div>
+      <div class="authors"><b>Zonglin Di</b>, Jing Shi, Yifei Fan, Hao Tan, Alexander Black, John Collomosse, Yang Liu</div>
+      <div class="venue"><span class="badge">ICCV 2025</span><span class="tag">VLM</span></div>
+      <ul class="desc">
+        <li>A large-scale, comprehensive, quality-controlled dataset for image difference captioning.</li>
+        <li>Finetuning mainstream VLMs (Qwen, InternVL, LLaVA, …) on DiffTell substantially improves their ability to describe what changed between two images.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="paper not-core">
+    <img src="images/papers/jarvis.png" alt="JARVIS">
+    <div>
+      <div class="title"><a href="https://arxiv.org/abs/2208.13266">JARVIS: A Neuro-Symbolic Commonsense Reasoning Framework for Conversational Embodied Agents</a></div>
+      <div class="authors">Kaizhi Zheng*, Kaiwen Zhou*, Jing Gu*, Yue Fan*, Jialu Wang*, <b>Zonglin Di</b>, Xuehai He, Xin Eric Wang</div>
+      <div class="venue"><span class="badge">NeSy 2025</span><span class="tag">VLM</span><span class="tag">Agentic AI</span></div>
+      <div class="desc">A neuro-symbolic framework that couples large language models with symbolic commonsense reasoning so conversational embodied agents can follow dialogue, ground instructions, and execute household tasks reliably.</div>
+    </div>
+  </div>
+
+  <div class="paper">
+    <img src="images/papers/adv-unlearning.png" alt="Adversarial Machine Unlearning">
+    <div>
+      <div class="title"><a href="https://arxiv.org/abs/2406.07687">Adversarial Machine Unlearning</a></div>
+      <div class="authors"><b>Zonglin Di</b>*, Sixie Yu*, Yevgeniy Vorobeychik, Yang Liu</div>
+      <div class="venue"><span class="badge">ICLR 2025</span><span class="tag">Trustworthy AI</span><span class="tag">Machine Unlearning</span></div>
+      <div class="desc">Frames machine unlearning as a Stackelberg game between an unlearner and a membership-inference auditor; the resulting algorithm produces models that forget more convincingly under audit while keeping performance on retained data.</div>
+    </div>
+  </div>
+
+  <div class="paper">
+    <img src="images/papers/fed-openset.png" alt="Federated Learning with Local Openset Noisy Labels">
+    <div>
+      <div class="title"><a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/04952.pdf">Federated Learning with Local Openset Noisy Labels</a></div>
+      <div class="authors"><b>Zonglin Di</b>, Zhaowei Zhu, Xiaoxiao Li, Yang Liu</div>
+      <div class="venue"><span class="badge">ECCV 2024</span><span class="tag">Computer Vision</span><span class="tag">Trustworthy AI</span></div>
+      <div class="desc">Studies the realistic federated setting where each client's data contains openset label noise (mislabeled samples from unknown classes), and proposes a theoretically grounded method to learn robustly under it.</div>
+    </div>
+  </div>
+
+  <div class="paper not-core">
+    <img src="images/papers/medical-noisy.png" alt="Noisy Labeled Multi-modal Medical Images">
+    <div>
+      <div class="title"><a href="https://dl.acm.org/doi/10.1145/3664647.3681274">A Simple and Provable Approach for Learning on Noisy Labeled Multi-modal Medical Images</a></div>
+      <div class="authors">Nan Wang, <b>Zonglin Di</b>, Houlin He, Qingchao Jiang, Xiaoxiao Li</div>
+      <div class="venue"><span class="badge">ACM MM 2024</span><span class="tag">Computer Vision</span><span class="tag">Trustworthy AI</span></div>
+      <div class="desc">A simple method with provable guarantees for training on multi-modal medical images whose labels are noisy — a common situation in clinical data collection.</div>
+    </div>
+  </div>
+
+  <div class="paper not-core">
+    <img src="images/papers/nav-attack.png" alt="Navigation as Attackers Wish?">
+    <div>
+      <div class="title"><a href="https://arxiv.org/abs/2211.14769">Navigation as Attackers Wish? Towards Building Robust Embodied Agents under Federated Learning</a></div>
+      <div class="authors">Yunchao Zhang, <b>Zonglin Di</b>, Kaiwen Zhou, Cihang Xie, Eric Xin Wang</div>
+      <div class="venue"><span class="badge">NAACL 2024</span><span class="tag">Trustworthy AI</span></div>
+      <div class="desc">Shows that federated training of vision-and-language navigation agents is vulnerable to poisoning attacks that steer agents along attacker-chosen routes, and studies defenses for building robust embodied agents.</div>
+    </div>
+  </div>
+
+  <div class="paper not-core">
+    <img src="images/papers/t2iat.png" alt="T2IAT">
+    <div>
+      <div class="title"><a href="https://arxiv.org/abs/2306.00905">T2IAT: Measuring Valence and Stereotypical Biases in Text-to-Image Generation</a></div>
+      <div class="authors">Jialu Wang, Xinyue Gabby Liu, <b>Zonglin Di</b>, Yang Liu, Xin Eric Wang</div>
+      <div class="venue"><span class="badge">ACL 2023 Findings</span><span class="tag">VLM</span><span class="tag">Trustworthy AI</span></div>
+      <div class="desc">Adapts the Implicit Association Test from psychology to text-to-image models, providing a principled way to quantify valence and stereotypical biases in generated images.</div>
+    </div>
+  </div>
+
+  <div class="paper">
+    <img src="images/papers/ttp-pose.png" alt="Test-Time Personalization for Pose Estimation">
+    <div>
+      <div class="title"><a href="https://arxiv.org/abs/2107.02133">Test-Time Personalization with a Transformer for Human Pose Estimation</a></div>
+      <div class="authors">Miao Hao*, Yizhuo Li*, <b>Zonglin Di</b>*, Nitesh B. Gundavarapu, Xiaolong Wang</div>
+      <div class="venue"><span class="badge">NeurIPS 2021</span><span class="tag">Computer Vision</span></div>
+      <div class="desc">Personalizes a human pose estimator to each subject at test time using self-supervised objectives — reconstructing another image of the same person without any annotations — yielding consistent accuracy gains.</div>
+    </div>
+  </div>
+
+  <div class="paper not-core">
+    <img src="images/papers/road-cvpr19.png" alt="Road Extraction from Aerial Imagery">
+    <div>
+      <div class="title"><a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Leveraging_Crowdsourced_GPS_Data_for_Road_Extraction_From_Aerial_Imagery_CVPR_2019_paper.pdf">Leveraging Crowdsourced GPS Data for Road Extraction from Aerial Imagery</a></div>
+      <div class="authors">Tao Sun, <b>Zonglin Di</b>, Pengyu Che, Chun Liu, Yin Wang</div>
+      <div class="venue"><span class="badge">CVPR 2019</span><span class="tag">Computer Vision</span></div>
+      <div class="desc">Fuses crowdsourced GPS trajectories with satellite imagery for road extraction, improving accuracy by 5% and boosting generalization to unseen areas by 40% over imagery-only baselines.</div>
+    </div>
+  </div>
+
+  <h3>Preprints</h3>
+
+  <div class="paper">
+    <div>
+      <div class="title">Improving the Capability of Visual Language Models with Occlusion Reasoning</div>
+      <div class="authors">Jinrui Yang*, <b>Zonglin Di</b>*, Ohi Dibua, Qing Liu, Seun Adekunle, Daniil Pakhomov, Darshan Ganesh Prasad, Cihang Xie, Yuyin Zhou</div>
+      <div class="venue"><span class="badge">In submission</span><span class="tag">VLM</span></div>
+      <div class="desc">Identifies occlusion understanding as a critical blind spot in current VLMs' spatial reasoning, and develops methods that teach models to reason about what is hidden behind what.</div>
+    </div>
+  </div>
+
+  <div class="paper">
+    <div>
+      <div class="title">Advancing Machine Unlearning Evaluation Requires Rethinking Retraining</div>
+      <div class="authors">Chris Liu*, <b>Zonglin Di</b>*, Jeffrey Flanigan, Yang Liu</div>
+      <div class="venue"><span class="badge">In submission</span><span class="tag">Machine Unlearning</span></div>
+      <div class="desc">Argues that the standard "retrain-from-scratch" gold standard for evaluating machine unlearning is flawed, and proposes a more reliable evaluation protocol.</div>
+    </div>
+  </div>
+
+  <div class="paper">
+    <div>
+      <div class="title"><a href="https://arxiv.org/abs/2408.11338">Automatic Dataset Construction (ADC): Sample Collection, Data Curation, and Beyond</a></div>
+      <div class="authors">Minghao Liu*, <b>Zonglin Di</b>*, et al.</div>
+      <div class="venue"><span class="badge">In submission</span></div>
+      <div class="desc">A framework for automatically constructing high-quality datasets with large language models, reducing the manual cost of dataset curation.</div>
+    </div>
+  </div>
+
+  <h3>Earlier publications</h3>
+  <ul class="compact">
+    <li><b>Zonglin Di</b>, Qi Kang, Daogang Peng, Mengchu Zhou. "<a href="https://ieeexplore.ieee.org/abstract/document/8914451">Density Peak based Pre-clustering Support Vector Machine for Multi-class Imbalanced Classification</a>." <i>IEEE SMC 2019</i>.</li>
+    <li><b>Zonglin Di</b>, Xiaoliang Gong, Jingyu Shi, Hosameldin O. A. Ahmed, Asoke K. Nandi. "<a href="https://www.sciencedirect.com/science/article/pii/S2352853218301512">Internet Addiction Disorder Detection of Chinese College Students Using Several Personality Questionnaire Data and Support Vector Machine</a>." <i>Addictive Behavior Reports, Elsevier, 2019</i>.</li>
+    <li class="not-core">Tao Sun, <b>Zonglin Di</b>, Yin Wang. "<a href="https://dl.acm.org/citation.cfm?id=3281550">Combining Satellite Imagery and GPS Data for Road Extraction</a>." <i>ACM SIGSPATIAL GeoAI 2018</i>.</li>
+    <li><b>Zonglin Di</b>, Siya Yao, Qi Kang, Mengchu Zhou. "<a href="https://doi.org/10.1109/SMC.2018.00124">AP-SVM: An Adaptive Clustering-based Support Vector Machine Algorithm for Imbalance Classification</a>." <i>IEEE SMC 2018</i>.</li>
+    <li><b>Zonglin Di</b>, Xiaoliang Gong, Jingyu Shi, Hosameldin O. A. Ahmed, Asoke K. Nandi. "<a href="https://ieeexplore.ieee.org/document/8302282">Detection of Internet Addiction Disorder Based on Personality Questionnaires of Chinese College Students and SVMs</a>." <i>ICSP-BMEI 2017</i>.</li>
+    <li class="not-core">Xiaoliang Gong, Bozhong Long, Kun Fang, <b>Zonglin Di</b>, Yichu Hou, Lei Cao. "<a href="https://ieeexplore.ieee.org/document/7603433">A Prediction Based on Clustering and Personality Questionnaire Data for IGD Risk</a>." <i>ICNC-FSKD 2016</i>.</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Ongoing Projects</h2>
+
+  <div class="project">
+    <div class="title">SkillsBench — benchmarking how well agent skills work</div>
+    <ul class="desc">
+      <li>The first benchmark for evaluating how effectively LLM agents use Skills — modular packages of procedural knowledge attached at inference time.</li>
+      <li>86 expert-curated tasks across 11 domains with deterministic verifiers, each evaluated with no Skills, curated Skills, and self-generated Skills.</li>
+      <li>Curated Skills raise average pass rate by 16.2 points (with wide domain variance), while self-generated Skills provide no benefit on average; smaller models with Skills can match larger models without them.</li>
+    </ul>
+    <div class="plinks"><a href="https://www.skillsbench.ai/">website</a> <a href="https://arxiv.org/abs/2602.12670">paper</a> <a href="https://github.com/benchflow-ai/skillsbench">code</a></div>
+  </div>
+
+  <div class="project">
+    <div class="title">ClawsBench — capability &amp; safety of LLM productivity agents</div>
+    <ul class="desc">
+      <li>Evaluates LLM productivity agents across five high-fidelity, production-conformant mock services (Gmail, Slack, Calendar, Docs, Drive), with deterministic state-based scoring that penalizes irreversible harmful actions.</li>
+      <li>Releases 7,800+ scored agent trajectories and shows that capability and safety do not track together: top models reach 39–64% task success but 7–33% unsafe-action rates.</li>
+    </ul>
+    <div class="plinks"><a href="https://clawsbench.benchflow.ai/">website</a> <a href="https://arxiv.org/abs/2604.05172">paper</a> <a href="https://github.com/benchflow-ai/ClawsBench">code</a></div>
+  </div>
+
+  <div class="project">
+    <div class="title">Resource2Skill — distilling human-created resources into agent skills</div>
+    <ul class="desc">
+      <li>A framework that auto-distills multimodal resources (tutorial videos, code repos, articles, reference artifacts) into 3,800+ executable, retrievable agent skills organized as a hierarchical multimodal wiki across seven authoring domains (Web, PowerPoint, Excel, Blender, audio, UE5, CAD).</li>
+      <li>A two-stage hierarchy-then-LM retrieval and an MCP-based execution runtime let agents compose skills and operate real tools, lifting average task quality by +11.9 points and outperforming Claude Code / Codex baselines on 26 of 28 model–domain cells.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="title">Dynamic MCTS tree with decoupled roles for LLM agents</div>
+    <div class="desc">Decouples the LLM agent into "Planner–Actor–Critic" with a dynamic MCTS tree, addressing sparse rewards and inaccurate process rewards in long-horizon GUI tasks.</div>
+  </div>
+
+  <div class="project">
+    <div class="title">Rethinking LLM evaluation</div>
+    <div class="desc">Analyzes the limitations of ELO-based evaluation for LLMs and develops a robust evaluation framework resilient to dataset-size variation and evaluation noise across chat, reasoning, and agent tasks.</div>
+  </div>
+
+  <div class="project">
+    <div class="title">Spatial reasoning for VLMs</div>
+    <div class="desc">Identifies critical limitations in VLMs' spatial reasoning and develops methods to enhance occlusion understanding and video-based spatial reasoning.</div>
+  </div>
+
+  <div class="project">
+    <div class="title">Improving GRPO sparse reward with an auxiliary reward</div>
+    <div class="desc">Addresses the sparse-reward problem in GRPO with an auxiliary reward formalized in an unbiased, semi-parametric way.</div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <h3>Internships</h3>
+  <div class="exp">
+    <div class="when">Jun 2026 – present</div>
+    <div class="what">
+      <div class="where"><a href="https://research.adobe.com/">Adobe Research</a>, San Jose, CA — Research Intern</div>
+      <ul class="desc">
+        <li>Distilling a cloud-scale unified multimodal model for image and text understanding and generation into an on-device student model.</li>
+        <li>Benchmarking six backbone architectures (dense, modality-split FFN, two-tower, MoE routing, mixture-of-blocks) at iso-compute to find the most distillation-friendly design.</li>
+        <li>Developing a cloud-to-device weight-inheritance scheme that initializes the student from the teacher, and exploring memory-efficient tokenization with few-step diffusion distillation.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="exp">
+    <div class="when">Jun 2025 – Sep 2025</div>
+    <div class="what">
+      <div class="where"><a href="https://machinelearning.apple.com/">Apple</a>, Sunnyvale, CA — Research Intern</div>
+      <ul class="desc">
+        <li>Gathered data to support the development of proactive AI, human comprehension, and models of user behavior.</li>
+        <li>Established a development pipeline for proactive AI and compared the performance of open-source and proprietary vision-language models.</li>
+        <li>Researched streaming online video-language understanding models.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="exp">
+    <div class="when">Jun 2024 – Nov 2024</div>
+    <div class="what">
+      <div class="where"><a href="https://research.adobe.com/">Adobe Research</a>, San Jose, CA — Research Intern</div>
+      <ul class="desc">
+        <li>Built a new RLHF pipeline for LLMs based on DPO, SimPO, SPIN, and online RLHF.</li>
+        <li>Investigated how to improve LLM generalization using limited high-quality data.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="exp">
+    <div class="when">Jun 2023 – Nov 2023</div>
+    <div class="what">
+      <div class="where"><a href="https://research.adobe.com/">Adobe Research</a>, San Jose, CA — Research Intern</div>
+      <ul class="desc">
+        <li>Researched vision-language representation learning to improve image difference captioning.</li>
+        <li>Finetuned mainstream vision-language models (Qwen, InternVL, LLaVA, …) on 100+ A100 GPUs.</li>
+        <li>Built DiffTell, a large-scale image difference captioning dataset, later published at ICCV 2025.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Research</h3>
+  <div class="exp">
+    <div class="when">Jun 2022 – present</div>
+    <div class="what">
+      <div class="where"><a href="https://www.ucsc.edu/">UC Santa Cruz</a> — Research Assistant (<a href="http://www.yliuu.com/">Prof. Yang Liu</a>)</div>
+      <ul class="desc">
+        <li>Proposed a theoretically grounded method for openset noisy labels in federated learning (ECCV 2024).</li>
+        <li>Improved machine unlearning from a Stackelberg-game perspective (ICLR 2025) and a label-smoothing perspective (ICLR 2026).</li>
+      </ul>
+    </div>
+  </div>
+  <div class="exp">
+    <div class="when">Jun 2021 – Jun 2022</div>
+    <div class="what">
+      <div class="where"><a href="https://www.ubc.ca/">UBC</a> — Research Assistant (<a href="https://xxlya.github.io/">Prof. Xiaoxiao Li</a>)</div>
+      <ul class="desc">
+        <li>Worked on medical image registration using self-supervised methods and reinforcement learning.</li>
+        <li>Studied un/weakly-supervised learning in federated settings, leading to a paper at ACM MM 2024.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="exp">
+    <div class="when">Sep 2020 – Jun 2022</div>
+    <div class="what">
+      <div class="where"><a href="https://ucsd.edu/">UC San Diego</a> — Research Assistant (<a href="https://xiaolonw.github.io/">Prof. Xiaolong Wang</a>)</div>
+      <div class="desc">Improved human pose estimation with test-time training and self-supervised learning, reconstructing another image of the same subject at test time without annotations (NeurIPS 2021).</div>
+    </div>
+  </div>
+  <div class="exp">
+    <div class="when">Jun 2018 – Sep 2020</div>
+    <div class="what">
+      <div class="where"><a href="https://en.tongji.edu.cn/">Tongji University</a> — Research Assistant (Prof. Yin Wang)</div>
+      <ul class="desc">
+        <li>Ran large-scale distributed road-extraction training on 40+ GPUs to study the limits of weakly-supervised semantic segmentation.</li>
+        <li>Fused deep learning with GPS data to improve road extraction, gaining 5% in accuracy and 40% in generalization to new areas (CVPR 2019).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="exp">
+    <div class="when">2022 – 2026 (expected)</div>
+    <div class="what">
+      <div class="where"><a href="https://www.ucsc.edu/">University of California, Santa Cruz</a></div>
+      <div class="role2">Ph.D. in Computer Science and Engineering · Advisor: <a href="http://www.yliuu.com/">Prof. Yang Liu</a></div>
+    </div>
+  </div>
+  <div class="exp">
+    <div class="when">2020 – 2022</div>
+    <div class="what">
+      <div class="where"><a href="https://ucsd.edu/">University of California, San Diego</a></div>
+      <div class="role2">M.S. in Electrical and Computer Engineering · Advisor: <a href="https://xiaolonw.github.io/">Prof. Xiaolong Wang</a></div>
+    </div>
+  </div>
+  <div class="exp">
+    <div class="when">2014 – 2019</div>
+    <div class="what">
+      <div class="where"><a href="https://en.tongji.edu.cn/">Tongji University</a></div>
+      <div class="role2">B.S. in Electrical and Computer Engineering · Advisor: Prof. Yin Wang</div>
+    </div>
+  </div>
+</section>
+
+<section id="misc">
+  <h2>Awards &amp; Service</h2>
+  <div class="exp">
+    <div class="when">Sep 2022</div>
+    <div class="what"><div class="desc"><b>Chancellor's Fellowship</b>, UC Santa Cruz (2 awarded among all applicants)</div></div>
+  </div>
+  <div class="exp">
+    <div class="when">Nov 2019</div>
+    <div class="what"><div class="desc"><b>2nd Prize</b>, 30th National "Challenge Cup" Academic Science and Technology Competition, Ministry of Education of China</div></div>
+  </div>
+  <p style="font-size:14.5px; color:#555; margin-top:14px;">
+    <b>Reviewer:</b> CVPR, ICCV, ECCV, NeurIPS, ICLR, ICML, AISTATS, AAAI, ACL, EMNLP, WACV, ACCV, ACM SIGSPATIAL.
+  </p>
+</section>
+
+<footer>
+  Last updated June 2026 · Zonglin Di
+</footer>
+
 </div>
-<table class="imgtable"><tr><td>
-<img src="profile.JPG" alt="Zonglin DI" width="200px" />&nbsp;</td>
-<td align="left"><p>Research Assistant supervised by <a href="https://eric-xw.github.io/">Prof. Eric Xin Wang</a> and <a href="http://www.yliuu.com/">Prof. Yang Liu</a><br /><br />
-University of California, Santa Cruz (UCSC) <br />
-Former advisor: 
-<a href="https://xiaolonw.github.io/">Prof. Xiaolong Wang</a>
-<a href="http://web.eecs.umich.edu/~yinw/" target=&ldquo;blank&rdquo;>Prof. Yin Wang</a>,
-<a href="https://www.brunel.ac.uk/people/asoke-k-nandi/" target=&ldquo;blank&rdquo;>Prof. Asoke Nandi</a>, 
-<a href="https://web.njit.edu/~zhou/" target=&ldquo;blank&rdquo;>Prof. Mengchu Zhou</a>, 
-<a href="https://scholar.google.com.hk/citations?user=t8K4P4wAAAAJ&amp;hl=zh-CN/" target=&ldquo;blank&rdquo;>Prof. Qi Kang</a><br />
-Contact: <a>zodi at ucsd dot edu</a></p>
-</td></tr></table>
-<h2>Short Bio</h2>
-<p>Zonglin is an incoming Ph.D. student at University of California, Santa Cruz, fortunately co-supervised by <a href="https://eric-xw.github.io/">Prof. Eric Xin Wang</a> and <a href="http://www.yliuu.com/">Prof. Yang Liu</a> since summer, 2022. He is a graduate student of UCSD from 2020. His interests are generally in the intersection of experiment-based deep learning and its theoretical explanation because he thinks math is beautiful and his start-up experience also confirms him that it is essential to find the explanation of deep learning to improve the security and robustness of the algorithm. He is also interested in how to make deep learning run on the embodied system rather than act as a demo. <b>More specifically, he is interested in unifying the semantic world together including language, vision, sound, motion, etc with math guarantee</b> which is the next-gen AI from his view. It is his honor to have joined <a href="https://xiaolonw.github.io/">Prof. Xiaolong Wang</a>'s Lab to focus on the self-supervised learning at UCSD. In his past five-year undergraduate period, he covered the knowledge of control science and computer science. Here is his <a href="research.pdf">research summary</a>.</p>
-<h2>Publications</h2>
-<ul>
-<li><p>Miao, Hao*, Yizhuo Li*, <u>Zonglin Di*</u>, Nitesh B. Gundavarapu, and Xiaolong Wang, <a href="https://arxiv.org/pdf/2107.02133.pdf"><i>Test-Time Personalization with a Transformer for Human Pose Estimation</i></a> 35th Conference on Neural Information Processing Systems (NeurIPS 2021)</p>
-</li>
-<li><p><u>Zonglin Di</u>, Xiaoliang Gong, Jingyu Shi, Hosameldin O. A. Ahmed and Asoke K. Nandi, <a href="https://www.sciencedirect.com/science/article/pii/S2352853218301512/"><i>Internet Addiction Disorder Detection of Chinese College Students Using Several Personality Questionnaire Data and Support Vector Machine</i></a>, Addictive Behavior Report, Elsevier, 2019</p>
-</li>
-<li><p><u>Zonglin Di</u>, Qi Kang, Daogang Peng and Mengchu Zhou, <a href="https://ieeexplore.ieee.org/abstract/document/8914451"><i>Density Peak based Pre-clustering Support Vector Machine for Multi-class Imbalanced Classification</i></a>, IEEE Conference on System Man and Cybernetics (SMC), 2019</p>
-</li>
-<li><p>Tao Sun, <u>Zonglin Di</u>, Pengyu Che, Chun Liu and Yin Wang, <a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Leveraging_Crowdsourced_GPS_Data_for_Road_Extraction_From_Aerial_Imagery_CVPR_2019_paper.pdf"><i>“Leveraging Crowdsourced GPS Data for Road Extraction from Aerial Imagery</i></a>, IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019</p>
-</li>
-<li><p>Tao Sun, <u>Zonglin Di</u> and Yin Wang, <a href="https://dl.acm.org/citation.cfm?id=3281550"><i>Combining Satellite Imagery and GPS Data for Road Extraction</i></a>, 2nd ACM SIGSPATIAL International Workshop on AI for Geographic Knowledge Discovery, 2018</p>
-</li>
-<li><p><u>Zonglin Di</u>, Siya Yao, Qi Kang and Mengchu Zhou, <a href="https://doi.org/10.1109/SMC.2018.00124"><i>AP-SVM: An Adaptive Clustering-based Support Vector Machine Algorithm for Imbalance Classification</i></a>, IEEE International Conference on Systems, Man, and Cybernetics (SMC), 2018</p>
-</li>
-<li><p><u>Zonglin Di</u>, and Qi Kang <a href="https://doi.org/10.1109/SMC.2018.00124"><i>ADPclust-SVM: An Adaptive Clustering-based Support Vector Machine Algorithm for Imbalance Classification</i></a>, IEEE International Conference on Networking, Sensing and Control (ICNSC), 2018 (Abstract)</p>
-</li>
-<li><p><u>Zonglin Di</u>, Xiaoliang Gong, Jingyu Shi, Hosameldin O. A. Ahmed and Asoke K. Nandi, <a href="http://ieeexplore.ieee.org/document/8302282/"><i>Detection of Internet Addiction Disorder Based on Personality Questionnaires of Chinese College Students and SVMs</i></a>, 10th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics, 2017</p>
-</li>
-<li><p>Xiaoliang Gong, Bozhong Long, Kun Fang, <u>Zonglin Di</u>, Yichu Hou and Lei Cao, <a href="http://ieeexplore.ieee.org/document/7603433/"><i>A prediction based on clustering and personality questionnaire data for IGD risk: A preliminary work</i></a>, 12th International Conference on Neural Computation, Fuzzy System and Knowledge Discovery (ICNC-FSKD), 2016</p></li>
-</ul>
-<h2>Education</h2>
-<ul>
-<li><p>Ph.D. Department of Computer Science and Engineering, <a href="https://engineering.ucsc.edu/" target=&ldquo;blank&rdquo;>University of California, Santa Cruz</a>, Santa Cruz, USA, June, 2022 to present</p></li>
-<li><p>M.Sc. Department of Electrical and Computer Engineering, <a href="https://www.ece.ucsd.edu/" target=&ldquo;blank&rdquo;>University of California, San Diego</a>, La Jolla, USA, Dec, 2020 to June, 2022.</p>
-</li>
-<li><p>B.E. Department of Control Science and Engineering, School of Electrical and Information Engineering, <a href="http://https://en.tongji.edu.cn/" target=&ldquo;blank&rdquo;>Tongji University</a> (My comments on Tongji are at the top of the source code of this page), Shanghai, China, Sept, 2014 to June, 2019.</p>
-</li>
-</ul>
-<h2>Internship</h2>
-<ul>
-<li>2021.07 - Present, Research assistant, UBC</li>
-<li>2020.06 - 2021.06, Research assistant, UCSD</li> 
-<li>2019.04 - 2020.06, Research assistant, Tongji University</li>
-<li>2018.04 - 2019.04, Full stack software engineer, National Instruments, Shanghai</li>
-<li>2017.10 - 2018.04, Research assistant, Intel R&D, Shanghai</li>
-<li>2017.06 - 2017.10, Software engineer, National Instruments, Shanghai</li>
-<li>2016.06 - 2016.09, Software engineer, Microsoft, Shanghai</li>
-<li>2015.06 - 2016.01, Technical consultant, Jikexueyuan, Beijing</li>
-</ul>
-<h2>Teaching</h2>
-<ul>
-<li><p>Teaching Assistant of <i>Python Programming</i>, Fall, 2018 (Supervisor: Prof. Yin Wang, Department of Computer Science and Technology)</p>
-</li>
-<li><p>Teaching Assistant of <i>Open Source and Programming</i>, Fall, 2018 (Supervisor: Prof. Xiaohua Sun, School of Design and Innovation)</p>
-</li>
-<li><p>Teaching Assistant of <a href="deep_learning.html" target=&ldquo;blank&rdquo;><i>Deep Learning</i></a>, Spring, 2019 (Supervisor: Prof. Yin Wang, Department of Computer Science and Technology)</p>
-</li>
-</ul>
-<h2>Research Interests</h2>
-<ul>
-<li><p>Deep Learning and its theoretical analysis</p>
-</li>
-<li><p>Unifying the multi-modality data</p>
-</li>
-<li><p><b>Make technology warm and full of humanity</b></p></li>
-</ul>
-<h2>Personal</h2>
-<p>In addition to research, reading is the most important part in his life. He is interested in history and medical reading, especially the research in history of <a href="https://en.wikipedia.org/wiki/Qing_dynasty">Qing Dynasty</a> when both challenges and opportunities exist and blood cancer treatments (There was one time that he was asked whether he was a student from medical school when he explained his test result of blood to the doctor :p). His favorite poets are <a href="https://en.wikipedia.org/wiki/Su_Shi">Su Shi</a> and <a href="https://en.wikipedia.org/wiki/Oscar_Wilde">Oscar Wilde</a>. He volunteered to give several <a href="https://www.sohu.com/a/139064195_170893">lectures</a> of techinics of control and measurements using LabVIEW to students from China, Italy, German, etc. when he was an undergraduate. <i>Civilization</i> is his favourite English word. His favourite sport teams are <a href="https://www.nba.com/spurs/">San Antonio Spurs</a> and <a href="https://en.wikipedia.org/wiki/Germany_national_football_team">Germany national footbal team</a> which he follows when he was 6.</p>
-<p>I got my Master of Science Degree on June 11, 2022 from UCSD. I would never forget two years I spent in UCSD. I will always be honored to be a Triton and take the responsibility to make the <i>Triton spirit</i> shine.</p>
-<h2>Awards and Reports</h2>
-<ul>
-<li><p>Chancellor’s Fellowship, UCSC, 2022 (2 of all the CSE applicants in 2022)</p></li>
-<li><p><a href="https://mp.weixin.qq.com/s/zJZjyiqzEMSeFrnbo8xLNg" target=&ldquo;blank&rdquo;>Outstanding Students Final list (10/~4000)</a></p>
-</li>
-<li><p><a href="http://news.eeworld.com.cn/FPGA/article_201707173728.html/" target=&ldquo;blank&rdquo;>Digilent Design Contest Final list in Chinese Area</a></p>
-</li>
-<li><p><a href="auto.pdf" target=&ldquo;blank&rdquo;>The Introduction to Python</a></p></li>
-</ul>
-<h2>Acknowledgment</h2>
-<p>In his past years, he was so lucky to get the help from the following people. Without their kind help, he would never be the guy he is now. He wants to give him thanks to:</p>
-<ul>
-  <li><p>Mr. Qihuang Chen, Canwei Zhang (UCSD), Mr. Derek Wang (Qualcomm), Mr. Zheng Li (Google)</p></li>
-  <li><p>M.D. Nan Yan (The University of Hong Kong - Shenzhen Hospital), Shutao Liu (Huashan Hospital), Jiajun Deng (Shanghai Pulmonary Hospital)</p></li>
-  <li><p>Mr. Fanze Kong, Math Ph.D. from UBC</p></li>
-  <li><p>Mr. Bo Zhou from Yale</p></li>
-  <li><p>Prof. Xiaoxiao Li from UBC (Very Special Thanks!)</p></li>
-  <li><p>Prof. Yi-an Ma from UCSD</p></li>
-  <li><p>Prof. Xiaolong Wang from UCSD</p></li>
-  <li><p>Prof. Yin Wang, Ph.D. at UMich</p></li>
-  <li><p>Prof. Asoke Nandi from Brunel University, Ph.D. at Cambridge</p></li>
-  <li><p>Prof. Mengchu Zhou from New Jersey Institute of Technology</p></li>
-  <li><p>Prof. Qi Kang from Tongji University</p></li>
-  <li><p>Prof. Xiaoliang Gong from Tongji University</p></li>
-  <li><p>Mr. Chaojin Yan from Tongji University</p></li>
-  <li><p>Mr. Ge Yan from UCSD</p></li>
-  <li><p>Prof. Zhiming Zhang from Tongji University, the first professor who has acknowledged me at Tongji</p></li>
-  <li><p>Mr. Mengze (Frank) Gao from NI, M.Sc. at UCLA</p></li>
-  <li><p>Mr. Kaijian Wang from Google, M.Sc. at CMU</p></li>
-  <li><p>Mr. Chuanzhe Suo from Sensetime</p></li>
-  <li><p>Mr. Wenda Zhao from University of Toronto</p></li>
-  <li><p>Mr. Tao Sun from ETHz</p></li>
-  <li><p>Miss Cecilia Hung (his girlfriend)</p></li>
-</ul>
-<div id="footer">
-<div id="footer-text">
-Page generated 2022-04-12 08:35:44 CST, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
-<span id="busuanzi_container_site_pv">
-  <span id="busuanzi_value_site_pv"></span>, <a href="https://jonbarron.info/">Credit</a>
-</span>
-</div>
-</div>
-</td>
-</tr>
-</table>
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-0000000-0";
-urchinTracker();
+
+<script>
+  document.querySelectorAll('.pubfilter button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.pubfilter button').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById('publications').classList.toggle('first-only', btn.dataset.mode === 'first');
+    });
+  });
 </script>
 </body>
 </html>
